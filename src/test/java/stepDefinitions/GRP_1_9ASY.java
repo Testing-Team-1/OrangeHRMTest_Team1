@@ -10,6 +10,7 @@ public class GRP_1_9ASY {
 
     @Then("Verify the visibility of addButton on the current page")
     public void verifyTheVisibilityOfAddButtonOnTheCurrentPage() {
+
         locators9.waitUntilVisible(locators9.addButton9);
         Assert.assertTrue(locators9.addButton9.isDisplayed());
     }
