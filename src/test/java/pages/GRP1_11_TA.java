@@ -12,17 +12,17 @@ public class GRP1_11_TA extends Parent {
     }
 
 
-    @FindBy(xpath="(//mat-option//span)[2]")
-    private WebElement gradeLevel2;
+    @FindBy(xpath="//*[text()='Add User']")
+    public WebElement addUserText;
 
-    public WebElement getWebElement(String strButton){
-
-        switch (strButton)
-        {
-            case "gradeLevel2" : return gradeLevel2;
-        }
-        return null;
-    }
+//    public WebElement getWebElement(String strButton){
+//
+//        switch (strButton)
+//        {
+//            case "gradeLevel2" : return gradeLevel2;
+//        }
+//        return null;
+//    }
 
 
     public void deleteItem(String searchedText) {
