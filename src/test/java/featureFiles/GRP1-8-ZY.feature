@@ -22,4 +22,3 @@ Feature: Login Functionality
     Examples:
       | name |
       | Dominic.Chase |
-
