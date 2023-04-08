@@ -14,12 +14,6 @@ public class GRP1_8_ZY_steps {
     GRP1_13_ZY dc= new GRP1_13_ZY();
     GRP1_8_ZY ln=new GRP1_8_ZY();
 
-//    @Given("Navigate to OrangeHRM")
-//    public void navigateToOrangeHRM() {
-//
-//        GWD.getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-//    }
-
     @Then("Enter username and password then click login button")
     public void enterUsernameAndPasswordThenClickLoginButton() {
         dc.sendKeysFunction(dc.username, "Admin");
@@ -65,6 +59,4 @@ public class GRP1_8_ZY_steps {
         dc.verifyContainsTextFunction(dc.alreadyExistMessage,"Already exists");
 
     }
-
-
 }
