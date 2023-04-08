@@ -14,14 +14,14 @@ public class GRP1_8_ZY_steps {
     GRP1_13_ZY dc= new GRP1_13_ZY();
     GRP1_8_ZY ln=new GRP1_8_ZY();
 
-    @Given("Navigate to OrangeHRM")
-    public void navigateToOrangeHRM() {
+//    @Given("Navigate to OrangeHRM")
+//    public void navigateToOrangeHRM() {
+//
+//        GWD.getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+//    }
 
-        GWD.getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-    }
-
-    @Then("Enter username and password and click login button")
-    public void enterUsernameAndPasswordAndClickLoginButton() {
+    @Then("Enter username and password then click login button")
+    public void enterUsernameAndPasswordThenClickLoginButton() {
         dc.sendKeysFunction(dc.username, "Admin");
         dc.sendKeysFunction(dc.loginPassword,"admin123");
         dc.clickFunction(dc.loginButton);
